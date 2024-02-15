@@ -1,0 +1,264 @@
+ @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+
+ /* buat import file font */
+ @font-face {
+     font-family: 'CorporativeN';
+     /* text normal */
+     src: local('text/corporativeN/Corporative Sans Rounded Regular'), local('Corporative-Sans-Rounded-Regular'),
+         url('text/corporativeN/CorporativeSansRd-Regular.woff2') format('woff2'),
+         url('text/corporativeN/CorporativeSansRd-Regular.woff') format('woff'),
+         url('text/corporativeN/CorporativeSansRd-Regular.ttf') format('truetype');
+     font-weight: 400;
+     font-style: normal;
+ }
+
+ @font-face {
+     font-family: 'CorporativeR';
+     /* text tebal */
+     src: local('Corporative Sans Rounded Bold'), local('Corporative-Sans-Rounded-Bold'),
+         url('text/corporativeRD/CorporativeSansRd-Bold.woff2') format('woff2'),
+         url('text/corporativeRD/CorporativeSansRd-Bold.woff') format('woff'),
+         url('text/corporativeRD/CorporativeSansRd-Bold.ttf') format('truetype');
+     font-weight: 300;
+     font-style: normal;
+ }
+
+ @font-face {
+     font-family: 'CorporativeSansRounded';
+     /* text paling tebal */
+     src: local('Corporative Sans Rounded Black Italic'), local('Corporative-Sans-Rounded-Black-Italic'),
+         url('text/corporativebold/CorporativeSansRd-BlackIt.woff2') format('woff2'),
+         url('text/corporativebold/CorporativeSansRd-BlackIt.woff') format('woff'),
+         url('text/corporativebold/CorporativeSansRd-BlackIt.ttf') format('truetype');
+     font-style: normal;
+ }
+
+ /* ------- */
+
+ .side-blue{
+    width: 10px;
+    height: 100%;
+    background-color: #2680EB;
+
+ }
+ .icon_profil {
+     width: 27%;
+     min-width: 100px;
+     min-height: 100px;
+     padding-bottom: 5%;
+     background-color: red;
+     text-align: center;
+     padding-top: 5%;
+     border-radius: 10px;
+ }
+
+ .buku-dipinjam {
+     filter: brightness(30%);
+ }
+
+ .foto-buku {
+     padding: 60% 50%;
+     background-position: center center;
+     background-repeat: no-repeat;
+     background-size: cover;
+     border-top-left-radius: 10px;
+     border-top-right-radius: 10px;
+ }
+
+ .bukubox {
+     width: 24%;
+     padding-bottom: 0px;
+     border-radius: 20px;
+     box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.1);
+     margin-right: 1%;
+     margin-bottom: 10%;
+ }
+
+
+ .bi::before {
+     display: inline-block;
+     content: "";
+     vertical-align: -.125em;
+     background-image: url("data:image/svg+xml,<svg viewBox='0 0 16 16' fill='%23333' xmlns='http://www.w3.org/2000/svg'><path fill-rule='evenodd' d='M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z' clip-rule='evenodd'/></svg>");
+     background-repeat: no-repeat;
+     background-size: 1rem 1rem;
+ }
+
+ .judul {
+     font-family: 'CorporativeSansRounded', sans-serif;
+     color: black;
+ }
+
+ .subjudul {
+     font-family: 'CorporativeR', sans-serif;
+ }
+
+ .title {
+     font-family: 'CorporativeR', sans-serif;
+ }
+
+ .form-control {
+     border-radius: 5px;
+     font-size: 90%;
+     margin-top: 1%;
+ }
+
+ .btn{
+    font-size: 90%;
+ }
+
+ .icon {
+     background-color: #7ea8d8;
+     color: #2680EB;
+     padding: 3% 5%;
+     border-radius: 2px;
+     text-align: center;
+ }
+
+ .dropdown2 {
+     width: 100%;
+     margin-top: 1%;
+     font-size: 90%;
+     display: block;
+     padding: 10%;
+ }
+
+ .selectoption {
+     margin-bottom: 3%;
+     width: 100%;
+ }
+
+ .buttontransparant {
+     background-color: transparent;
+     border-color: transparent;
+
+     font-size: 90%;
+ }
+
+ .tabel {
+     box-shadow: 0 0px 3px rgba(0, 0, 0, 0.1);
+     border-radius: 5px;
+     background-color: white;
+
+ }
+
+ .box {
+     padding: 1%;
+     padding-left: 3%;
+     font-size: 90%;
+ }
+
+ .ButtonB {
+     padding: 4%;
+     font-size: 90%
+ }
+
+ .table thead tr td {
+     border: none;
+ }
+
+
+ @media screen and (max-width: 600px) {
+
+     /* kalau ukuran layar diminimize kurang dari 500px */
+     .table {
+         font-size: 80%;
+     }
+
+     .sidebar {
+         width: 100%;
+     }
+ }
+
+ .top-bar {
+     background-color: white;
+     color: silver;
+     padding-top: 1%;
+     padding-bottom: 1%;
+     width: 100%;
+     position: fixed;
+     z-index: 2;
+     padding-left: 7%;
+     transition: position 0.3s ease;
+ }
+
+
+
+ .container {
+     display: grid;
+     grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
+     gap: 10px;
+ }
+
+ .container_big {
+     display: grid;
+     grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
+     gap: 10px;
+     padding: 1%;
+     position: center;
+ }
+
+ .gridbox {
+     display: grid;
+     grid-template-columns: auto auto;
+     gap: 10px;
+ }
+
+
+
+ .sidebar {
+     height: 100%;
+     width: 20%;
+     background-color: white;
+     overflow-x: hidden;
+     transition: 0.5s;
+     position: fixed;
+     color: silver;
+     box-shadow: 0 0px 3px rgba(0, 0, 0, 0.1);
+     z-index: 3;
+ }
+
+ .sidebar a {
+     padding: 15px 10px;
+     text-decoration: none;
+     font-size: 90%;
+     color: silver;
+     display: block;
+     transition: 0.3s;
+ }
+
+ .text_side {
+     padding: 15px 10px;
+     text-decoration: none;
+     display: block;
+     transition: 0.3s;
+     color: silver;
+ }
+
+ .sidebar .menuselect {
+     color: #2680EB;
+ }
+
+ .main-content {
+     margin-left: 15%;
+ }
+
+ .container-horizontal-right {
+     float: right;
+     width: 30%;
+     margin-left: 2%;
+     box-sizing: border-box;
+     padding: 10px;
+ }
+
+ .dropdown-content {
+     margin-top: 1%;
+     display: none;
+     position: absolute;
+     float: left;
+     box-sizing: border-box;
+     background-color: white;
+     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+     z-index: 1;
+ }

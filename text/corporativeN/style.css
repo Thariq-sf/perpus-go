@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Corporative Sans Rounded';
+    src: local('Corporative Sans Rounded Regular'), local('Corporative-Sans-Rounded-Regular'),
+        url('CorporativeSansRd-Regular.woff2') format('woff2'),
+        url('CorporativeSansRd-Regular.woff') format('woff'),
+        url('CorporativeSansRd-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+  }
